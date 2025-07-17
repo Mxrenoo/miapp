@@ -15,7 +15,15 @@ formulario.addEventListener("submit", (e)=>{
 
 
 function editar(e){
-
+    const parrafo = e.parentElement.querySelector("p:nth-child(2)");
+    parrafo.contentEditable = true;
+    e.value = "guardar";
+    if(parrafo.contentEditable){
+        parrafo.contentEditable = false;
+    }
+    if(e.value == "guardar"){
+        e. value "Editar";
+    }
 }
 
 function eliminar(e){
